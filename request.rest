@@ -1,0 +1,36 @@
+GET  http://localhost:3000
+
+### createUser
+POST http://localhost:3000/createUser
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "1234567"
+}
+
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "dc@gmail.com",
+  "password": "123456"
+}
+### Rfresh Token
+POST http://localhost:3000/refreshToken
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRjQGdtYWlsLmNvbSIsImlhdCI6MTYwNzA4Mzc0MX0.lwPaHj8Nv_vTiFQDQRiaHCKygVdTd7UG5ZgbzofdTUE"
+}
+
+### Create-Post
+POST http://localhost:3000/createPost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRjQGdtYWlsLmNvbSIsImlhdCI6MTYwNzA4MjU2MSwiZXhwIjoxNjA3MDgyNTc2LCJpc3MiOiJEQyIsInN1YiI6Ik5PVEhJTkcifQ.CBTCIvJ_lFP06OBF_zEAp_7S0PZQXEPkiyMzDIPWXIA 
+
+{
+  "username": "dc@gmail.com",
+  "title": "Hello world"
+}
